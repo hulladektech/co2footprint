@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hulladek - CO2 Footprint Calculator</title>
+    <link rel="stylesheet" type="text/css" href="assets\styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2> <img src="images\Logo.png" width="300 px" height="150 px"></h2>
+        <h3>Carbon Footprint Calculator</h3>
+        <p>Enter Your Daily Consumption of Electronic Devices...</p>
+        <form>
+            <h3> <U> Electricity Consumption </U> </h3>
+            <label for="electricity">Mobile Charge in a Day:</label>
+            <input type="number" id="electricity1" name="electricity1" placeholder="Enter Hours">
+
+            <label for="electricity">Computer Use in a Day:</label>
+            <input type="number" id="electricity2" name="electricity2" placeholder="Enter Hours">
+
+            <!---------------------------------------------------------------------------------------->
+
+            <h3> <U> Transportation </U> </h3>
+            <label for="transportation">Travel Cost Perday:</label>
+            <input type="number" id="transportation" name="transportation" placeholder="Enter Amount">
+
+            <!--<label for="waste">Waste Production:</label>
+            <input type="number" id="waste" name="waste" placeholder="Enter kgCO2e">-->
+
+            <button type="button" onclick="calculateFootprint()">Calculate</button>
+        </form>
+        <div id="result1"></div>
+        <div id="result2"></div>
+        <div id="result3"></div>
+
+    </div>
+    <script src="assets\script.js"></script>
+</body>
+</html>
